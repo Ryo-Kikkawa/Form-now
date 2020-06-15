@@ -1,7 +1,57 @@
-.side-header {
-  background-color: red;
-  color: red;
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-family: monospace;
+  background: linear-gradient(to right, #111021, #B85057);
+
+  .left-side {
+    color: #fff;
+    height: 100%;
+    width: 200px;
+    .side-header {
+      height: 100px;
+      width: 100%;
+      border: #FFFFFF solid 2px;
+      display: flex;
+      align-items: center;
+      .top-item {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+        &__name {
+        }
+        &__icons {
+          align-items: center;
+          display: flex;
+
+        }
+      }
+    }
+    .side-content {
+      font-size: 20px;
+      height: calc(100% - 100px);
+      border: #FFFFFF solid 2px;
+      &__groups {
+        padding: 20px 20px 5px;
+        font-size: 15px;
+
+      }
+      &__chat {
+        padding: 0px 20px 40px;
+        font-size: 11px;
+
+      }
+
+    }
+  }
 }
-.side-content {
-  background-color: green;
+
+a {
+  color: #fff;
+}
+.far {
+  padding-right: 5px;
 }

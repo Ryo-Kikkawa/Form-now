@@ -1,5 +1,16 @@
-.side-header
-吉川 涼
-.side-content
-  アカウント
-  チャット
+.left-side
+  .side-header
+    .top-item
+      %h3.top-item__name
+        name
+        -# = current_user.name
+      %ul.top-item__icons
+        %li.icon
+          = icon('far', 'edit', class: 'faa-tada animated-hover')
+        %li.icon
+          = icon('fa', 'cog fa-spin', class: 'icon2')
+  .side-content
+    .side-content__groups
+      group
+    .side-content__chat
+      messege

@@ -2,8 +2,12 @@ userテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|email|string|null: false|
+|income|integer|null: false|
+|pending|integer|null: false|
+|target|string|null: false|
+|target-amount|integer|null: false|
 |password|string|null: false|
+
 
 ### Association
 has_many : messages
