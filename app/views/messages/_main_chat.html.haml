@@ -1,11 +1,36 @@
-.header
-  .header__target
-  目標まで
-  .header__target-amount
-  3,000,000円
+.right-side
+  .header
+    .header__target
+      目標まで
+    .header__target-amount
+      3,000,000円
 
-.main
-  .main-circle
+  .main
+    .main__circle
+      Today's pocket money
+    .main__money
+      3000円
 
-.resent-amount
-貯蓄額 340,000円
+  .chat
+    .balloon_l
+      .faceicon
+        %img{:alt => "", :src => "#.jpg"}/
+      %p.says 今日飲み会になったー！
+
+    .balloon_r
+      .faceicon
+        %img{:alt => "", :src => "#.jpg"}/
+      .says
+        %p じゃあ少し入金しておくね!
+
+  .message
+    .message__box
+      %input{type: "text", class: "message__box__input", placeholder: "type a text"}
+      %label{class: "message__box__image"}
+        %i.fas.fa-image.faa-wrench.animated-hover
+        %input{type: "file", class:"message__box__image__file"}
+
+    %input{type: "submit", class: "message__send"}
+
+  .resent-amount
+    貯金 340,000円
